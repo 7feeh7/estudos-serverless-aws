@@ -2,9 +2,9 @@
     "Role": {
         "Path": "/",
         "RoleName": "lambda-exemplo",
-        "RoleId": "AROAZWDRACLYTVLEQ4C2R",
+        "RoleId": "AROAZWDRACLYVY4KLZQAH",
         "Arn": "arn:aws:iam::665956913905:role/lambda-exemplo",
-        "CreateDate": "2021-09-05T19:20:04+00:00",
+        "CreateDate": "2021-12-28T14:12:44+00:00",
         "AssumeRolePolicyDocument": {
             "Version": "2012-10-17",
             "Statement": [

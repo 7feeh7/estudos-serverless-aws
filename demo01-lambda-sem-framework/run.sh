@@ -26,7 +26,7 @@ aws lambda invoke \
 # -- atualizar, zipar
 zip function.zip index.js
 
-#atualizar lambda
+# atualizar lambda
 aws lambda update-function-code \
     --zip-file fileb://function.zip \
     --function-name hello-cli \
@@ -39,7 +39,7 @@ aws lambda invoke \
     --log-type Tail \
     logs/lambda-exec.log
 
-#remover
+# remover
 aws lambda delete-function \
     --function-name hello-cli
 
