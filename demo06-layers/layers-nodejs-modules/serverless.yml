@@ -1,0 +1,26 @@
+service: layers-nodejs-modules
+
+frameworkVersion: '2 || 3'
+
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  lambdaHashingVersion: 20201221
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: 'hello'
+          method: 'get'
+    layers:
+      - {Ref: NodeModulesLambdaLayer}
+
+
+layers:
+  NodeModules:
+    path: layer
+    compatibleRuntimes:
+      - nodejs18.x
